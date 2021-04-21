@@ -116,11 +116,11 @@ class LyricSite:
         else:
             con = sqlite3.connect(db_name)
             cur = con.cursor()
-            cur.execute("SELECT * FROM song_meta WHERE base_url = ?", [self._base_url])
+            cur.execute("SELECT last_page FROM song_meta WHERE base_url = ?", [self._base_url])
             res = cur.fetchone()
             con.close()
             if res != None:
-                return res['last_page']
+                return res[0]
             else:
                 return 1
 

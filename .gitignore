@@ -2,3 +2,4 @@ lyric.db
 .vscode
 integration/__pycache__
 run*
+*.pyc

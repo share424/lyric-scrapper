@@ -86,6 +86,8 @@ class LyricSite:
             self.save_mongo(song, page)
         else:
             self.save_sqlite(song, page)
+        with open(f"meta_{self._base_url}.txt", "w") as file:
+            file.write(f"{page}")
     
     def getLastPageMongo(self):
         client = MongoClient("mongodb://127.0.0.1:27017")

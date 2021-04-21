@@ -3,3 +3,4 @@ lyric.db
 integration/__pycache__
 run*
 *.pyc
+meta*

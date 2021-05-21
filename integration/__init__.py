@@ -11,3 +11,6 @@ def findIntegration(url):
         if(integration.is_mine(url)):
             return integration
     return None
+
+def getIntegrations():
+    return integrations

@@ -14,10 +14,12 @@ $ pip install -r requirements.txt
 ## How to use?
 Jalankan perintah berikut
 ```
-$ python main.py liriklagu.id
+$ python main.py
 ```
 
-perintah diatas akan melakukan scrapping terhadap semua lagu yg ada di [liriklagu.id](https://www.liriklagu.id/). Hasil scrapping akan disimpan ke dalam file sqlite jika kalian tidak menginstall mongodb.
+lalu selanjutnya masukkan nomor situs yang ingin di-scrap.
+
+Hasil scrapping akan disimpan ke dalam file sqlite jika kalian tidak menginstall mongodb.
 
 Jika kalian ingin menggunakan mongodb, atur koneksinya pada file [lyricsite.py](https://github.com/share424/lyric-scrapper/blob/master/integration/lyricsite.py). jangan lupa install mongoclient dengan perintah berikut
 ```
